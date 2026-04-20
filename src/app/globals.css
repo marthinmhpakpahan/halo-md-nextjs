@@ -299,6 +299,12 @@ a {
   align-items: center;
 }
 
+.output-footer {
+  margin-top: 14px;
+  padding-top: 16px;
+  border-top: 3px solid var(--border);
+}
+
 .primary-button,
 .ghost-button,
 .chip-action {

@@ -351,7 +351,12 @@ export function HaloMdApp() {
                 The preview only includes filled fields, so the output stays clean while you work.
               </p>
             </div>
+          </div>
 
+          <p className="save-status">{saveStatus}</p>
+          <MarkdownPreview markdown={markdown || "# HaloMD"} />
+
+          <div className="output-footer">
             <div className="preview-actions">
               <button type="button" className="ghost-button" onClick={() => void handleCopy()}>
                 Copy
@@ -364,9 +369,6 @@ export function HaloMdApp() {
               </button>
             </div>
           </div>
-
-          <p className="save-status">{saveStatus}</p>
-          <MarkdownPreview markdown={markdown || "# HaloMD"} />
         </section>
       </section>
     </main>

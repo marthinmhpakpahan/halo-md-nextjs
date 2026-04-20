@@ -284,32 +284,6 @@ export function HaloMdApp() {
                 Every field is optional. Fill in only what you know, and the markdown will grow around it.
               </p>
             </div>
-
-            <div className="stepbar stepbar-inline" aria-label="Wizard progress">
-              <div>
-                <span className="stat-label">Current</span>
-                <strong>{activeSection?.title}</strong>
-              </div>
-              <div>
-                <span className="stat-label">Progress</span>
-                <strong>
-                  {activeSectionIndex + 1} / {wizardSections.length}
-                </strong>
-              </div>
-              <div className="stepbar-actions">
-                <button type="button" className="ghost-button" onClick={() => goToSection(activeSectionIndex - 1)} disabled={activeSectionIndex === 0}>
-                  Previous
-                </button>
-                <button
-                  type="button"
-                  className="primary-button"
-                  onClick={() => goToSection(activeSectionIndex + 1)}
-                  disabled={activeSectionIndex === wizardSections.length - 1}
-                >
-                  Next
-                </button>
-              </div>
-            </div>
           </div>
 
           <div className="wizard-tabs">
@@ -355,6 +329,30 @@ export function HaloMdApp() {
                   )}
                 </label>
               ))}
+            </div>
+
+            <div className="wizard-footer">
+              <div className="wizard-progress">
+                <span className="stat-label">Current</span>
+                <strong>{activeSection?.title}</strong>
+                <small>
+                  {activeSectionIndex + 1} / {wizardSections.length}
+                </small>
+              </div>
+
+              <div className="wizard-nav">
+                <button type="button" className="ghost-button" onClick={() => goToSection(activeSectionIndex - 1)} disabled={activeSectionIndex === 0}>
+                  Previous
+                </button>
+                <button
+                  type="button"
+                  className="primary-button"
+                  onClick={() => goToSection(activeSectionIndex + 1)}
+                  disabled={activeSectionIndex === wizardSections.length - 1}
+                >
+                  Next
+                </button>
+              </div>
             </div>
           </article>
         </section>

@@ -262,42 +262,42 @@ a {
   margin-bottom: 14px;
 }
 
-.stepbar,
-.preview-actions {
-  display: flex;
-  gap: 14px;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.stepbar {
-  margin-bottom: 14px;
-  padding: 14px 16px;
-  border-radius: 18px;
-  background: var(--surface-muted);
-  border: 3px solid var(--border);
-  flex-wrap: wrap;
-  box-shadow: 4px 4px 0 var(--border);
-}
-
-.stepbar-inline {
-  margin-bottom: 0;
-  flex: 1;
-}
-
-.stepbar strong {
-  display: block;
-  margin-top: 6px;
-  font-family: "Manrope", ui-sans-serif, system-ui, sans-serif;
-  font-weight: 900;
-}
-
-.stepbar-actions,
 .preview-actions {
   display: flex;
   gap: 10px;
   align-items: center;
   flex-wrap: wrap;
+}
+
+.wizard-footer {
+  display: flex;
+  gap: 14px;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 18px;
+  padding-top: 16px;
+  border-top: 3px solid var(--border);
+}
+
+.wizard-progress {
+  display: grid;
+  gap: 4px;
+}
+
+.wizard-progress strong {
+  font-family: "Manrope", ui-sans-serif, system-ui, sans-serif;
+  font-size: 1.05rem;
+  font-weight: 900;
+}
+
+.wizard-progress small {
+  color: var(--soft);
+}
+
+.wizard-nav {
+  display: flex;
+  gap: 10px;
+  align-items: center;
 }
 
 .primary-button,
@@ -552,9 +552,13 @@ textarea::-webkit-scrollbar-thumb,
     flex-direction: column;
   }
 
-  .stepbar,
   .preview-actions,
   .auth-bar-compact {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .wizard-footer {
     flex-direction: column;
     align-items: stretch;
   }

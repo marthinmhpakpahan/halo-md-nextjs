@@ -42,9 +42,9 @@ The second screen shows the generated markdown, which can be split into multiple
 
 ## Wizard Sections
 
-The wizard is designed mainly for software development docs, so it should ask for the information people usually need to plan, build, ship, and maintain an app.
+The wizard is designed mainly for software development docs.
 
-All fields in the wizard are optional. The form should be complete enough to cover a full software project, but users can skip any field they do not want to fill in.
+All fields are optional. Users can skip anything they do not know yet.
 
 ### App Details
 
@@ -52,24 +52,11 @@ All fields in the wizard are optional. The form should be complete enough to cov
 - Short Description
 - Main Goal
 - Target Users
-- Project Status
 
 ### Product Scope
 
 - Core Features
 - Key User Flows
-- Main Use Cases
-- Non-Goals
-- Success Criteria
-
-### Design
-
-- Theme
-- Typography
-- Color Style
-- Layout Style
-- Motion / Interaction Style
-- Accessibility Notes
 
 ### Technical Setup
 
@@ -77,94 +64,28 @@ All fields in the wizard are optional. The form should be complete enough to cov
 - Database or Storage
 - Authentication
 - Hosting / Deployment
-- Integrations
 - Environment Variables
 
 ### Architecture
 
 - System Overview
 - Main Modules
-- Folder Structure
-- State Management
 - Data Flow
-- Component Structure
-
-### Data Structure
-
-- Main Entities
-- Important Fields
-- Relationships
-- Content Sections
-- File or Document Naming
-
-### API and Integrations
-
-- API Endpoints
-- External Services
-- Webhooks
-- Request and Response Shapes
-- Error Handling
-
-### Behavior
-
-- Screens
-- Wizard Steps
-- Empty States
-- Error States
-- Loading States
 
 ### Rules
 
 - Validation Rules
-- Content Rules
 - Formatting Rules
-- Accessibility Rules
-- Document Rules
+- Content Rules
 - Special Instructions
-
-### Testing
-
-- Test Strategy
-- Unit Tests
-- Integration Tests
-- Manual QA
-- Edge Cases
-
-### Deployment
-
-- Deployment Platform
-- Build Steps
-- Release Process
-- Environment Setup
-- Monitoring / Logging
-
-### Security
-
-- Authentication Rules
-- Access Control
-- Sensitive Data Handling
-- Validation and Sanitization
-- Security Notes
-
-### Maintenance
-
-- Contributing
-- Troubleshooting
-- FAQ
-- Roadmap
-- Open Questions
 
 ### Output Documents
 
 - Overview
 - Design Document
 - Architecture Document
-- API Document
 - Rules or Guidelines
 - Setup Guide
-- Testing Guide
-- Deployment Guide
-- FAQ
 - Roadmap
 
 ## v1 Roadmap

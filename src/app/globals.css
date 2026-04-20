@@ -128,7 +128,6 @@ a {
 
 .panel,
 .section-card,
-.section-chip,
 .wizard-card,
 .history-item,
 .history-popover,
@@ -350,47 +349,6 @@ a {
   cursor: not-allowed;
   transform: none;
   box-shadow: 4px 4px 0 var(--border);
-}
-
-.wizard-tabs {
-  display: flex;
-  gap: 10px;
-  margin-bottom: 14px;
-  overflow-x: auto;
-  padding-bottom: 4px;
-}
-
-.section-chip {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 3px;
-  padding: 12px 14px;
-  border-radius: 16px;
-  color: var(--text);
-  text-align: left;
-  white-space: nowrap;
-  transition:
-    transform 160ms ease,
-    box-shadow 160ms ease,
-    background-color 160ms ease;
-}
-
-.section-chip:hover {
-  transform: translate(-1px, -1px);
-  background: #fff;
-  box-shadow: 5px 5px 0 var(--border);
-}
-
-.section-chip.active {
-  background: #fff;
-  box-shadow: 5px 5px 0 var(--accent-2);
-  border-color: var(--accent-2);
-}
-
-.section-chip small {
-  color: var(--soft);
 }
 
 .wizard-card {

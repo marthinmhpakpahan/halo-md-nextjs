@@ -286,21 +286,6 @@ export function HaloMdApp() {
             </div>
           </div>
 
-          <div className="wizard-tabs">
-            {wizardSections.map((section, index) => (
-              <button
-                key={section.id}
-                type="button"
-                className={index === activeSectionIndex ? "section-chip active" : "section-chip"}
-                aria-current={index === activeSectionIndex ? "true" : undefined}
-                onClick={() => goToSection(index)}
-              >
-                <span>{section.title}</span>
-                <small>{section.fields.length} prompts</small>
-              </button>
-            ))}
-          </div>
-
           <article className="wizard-card" id={activeSection?.id}>
             <div className="section-heading">
               <div>
